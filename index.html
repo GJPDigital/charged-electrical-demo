@@ -1,0 +1,647 @@
+
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fictional demonstration website: do not index -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Charged Electrical | Gold Coast to Byron Bay</title>
+    <meta name="description" content="A fictional electrical services website demonstration created by GJP Digital.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- DEMONSTRATION NOTICE -->
+    <div class="demo-banner">
+        FICTIONAL WEBSITE DEMONSTRATION BY GJP DIGITAL — NOT A REAL ELECTRICAL BUSINESS
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+            <a href="#home" class="logo" aria-label="Charged Electrical home">
+                <span class="logo-symbol">ϟ</span>
+                <span class="logo-text">
+                    <strong>CHARGED</strong>
+                    <small>ELECTRICAL</small>
+                </span>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#areas">Service Areas</a>
+                <a href="#contact" class="nav-cta">GET A QUOTE <span aria-hidden="true">↗</span></a>
+            </nav>
+
+            <a href="#contact" class="mobile-cta">GET A QUOTE</a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+
+            <div class="hero-grid" aria-hidden="true"></div>
+
+            <!-- Animated circuit decoration -->
+            <div class="circuit-visual" aria-hidden="true">
+                <svg viewBox="0 0 800 650" preserveAspectRatio="xMidYMid meet">
+                    <defs>
+                        <filter id="electric-glow">
+                            <feGaussianBlur stdDeviation="5" result="blur"/>
+                            <feMerge>
+                                <feMergeNode in="blur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <g class="circuit-lines">
+                        <path d="M800 95 H570 L495 170 H280"/>
+                        <path d="M800 230 H670 L560 340 H310"/>
+                        <path d="M800 475 H620 L515 580 H210"/>
+                        <path d="M750 0 V90 L650 190 V420"/>
+                        <path d="M800 590 H710 L615 495 V325"/>
+                        <path d="M440 0 V85 L365 160 V300"/>
+                    </g>
+
+                    <g class="circuit-pulses" filter="url(#electric-glow)">
+                        <path d="M800 95 H570 L495 170 H280"/>
+                        <path d="M800 230 H670 L560 340 H310"/>
+                        <path d="M800 475 H620 L515 580 H210"/>
+                        <path d="M750 0 V90 L650 190 V420"/>
+                        <path d="M800 590 H710 L615 495 V325"/>
+                        <path d="M440 0 V85 L365 160 V300"/>
+                    </g>
+
+                    <g class="circuit-nodes">
+                        <circle cx="570" cy="95" r="5"/>
+                        <circle cx="495" cy="170" r="5"/>
+                        <circle cx="670" cy="230" r="5"/>
+                        <circle cx="560" cy="340" r="5"/>
+                        <circle cx="620" cy="475" r="5"/>
+                        <circle cx="515" cy="580" r="5"/>
+                        <circle cx="650" cy="190" r="5"/>
+                        <circle cx="615" cy="495" r="5"/>
+                        <circle cx="365" cy="160" r="5"/>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="container hero-inner">
+
+                <div class="hero-content">
+
+                    <div class="hero-eyebrow">
+                        <span class="live-dot"></span>
+                        GOLD COAST TO BYRON BAY
+                    </div>
+
+                    <h1>
+                        POWERING<br>
+                        WHAT <span>MATTERS.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Family-owned electrical services backed by
+                        35 years of experience. Reliable solutions
+                        for homes, businesses and everything in between.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            GET A FREE QUOTE
+                            <span aria-hidden="true">↗</span>
+                        </a>
+
+                        <a href="#services" class="btn btn-outline">
+                            EXPLORE SERVICES
+                        </a>
+                    </div>
+
+                    <div class="hero-proof">
+                        <div class="proof-item">
+                            <strong>35<span>+</span></strong>
+                            <small>YEARS EXPERIENCE</small>
+                        </div>
+
+                        <div class="proof-divider"></div>
+
+                        <div class="proof-item">
+                            <strong>100<span>%</span></strong>
+                            <small>FAMILY OWNED</small>
+                        </div>
+
+                        <div class="proof-divider"></div>
+
+                        <div class="proof-item proof-location">
+                            <strong>GC <span>→</span> BYRON</strong>
+                            <small>LOCAL SERVICE AREA</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom">
+                <span>01 / CHARGED ELECTRICAL</span>
+                <span>BUILT TO KEEP YOU CONNECTED</span>
+            </div>
+
+        </section>
+
+<!-- SERVICES SECTION -->
+<section class="services-section" id="services">
+
+    <div class="container">
+
+        <div class="services-heading">
+            <div class="services-heading-left">
+                <span class="section-label">
+                    <span class="label-line"></span>
+                    WHAT WE DO
+                </span>
+
+                <h2>
+                    ELECTRICAL WORK.<br>
+                    <span>DONE RIGHT.</span>
+                </h2>
+            </div>
+
+            <div class="services-heading-right">
+                <p>
+                    From small electrical upgrades to larger installations,
+                    Charged Electrical is built around practical solutions
+                    for homes and businesses.
+                </p>
+            </div>
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card">
+                <div class="service-card-top">
+                    <span class="service-number">01 /</span>
+                    <span class="service-icon" aria-hidden="true">⌂</span>
+                </div>
+                <h3>RESIDENTIAL<br>ELECTRICAL</h3>
+                <p>
+                    Electrical installations, upgrades and repairs
+                    for homes of all shapes and sizes.
+                </p>
+                <div class="service-card-bottom">
+                    <span>HOME ELECTRICAL</span>
+                    <span aria-hidden="true">↗</span>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-card-top">
+                    <span class="service-number">02 /</span>
+                    <span class="service-icon" aria-hidden="true">▤</span>
+                </div>
+                <h3>COMMERCIAL<br>ELECTRICAL</h3>
+                <p>
+                    Electrical solutions for offices, shops
+                    and commercial properties.
+                </p>
+                <div class="service-card-bottom">
+                    <span>BUSINESS SOLUTIONS</span>
+                    <span aria-hidden="true">↗</span>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-card-top">
+                    <span class="service-number">03 /</span>
+                    <span class="service-icon" aria-hidden="true">☼</span>
+                </div>
+                <h3>LIGHTING<br>SOLUTIONS</h3>
+                <p>
+                    Modern lighting installations, LED upgrades
+                    and practical lighting improvements.
+                </p>
+                <div class="service-card-bottom">
+                    <span>LIGHTING & LED</span>
+                    <span aria-hidden="true">↗</span>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-card-top">
+                    <span class="service-number">04 /</span>
+                    <span class="service-icon" aria-hidden="true">ϟ</span>
+                </div>
+                <h3>SWITCHBOARDS<br>& UPGRADES</h3>
+                <p>
+                    Switchboard improvements and electrical
+                    upgrades for changing property needs.
+                </p>
+                <div class="service-card-bottom">
+                    <span>POWER UPGRADES</span>
+                    <span aria-hidden="true">↗</span>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-card-top">
+                    <span class="service-number">05 /</span>
+                    <span class="service-icon" aria-hidden="true">◎</span>
+                </div>
+                <h3>FAULT FINDING<br>& REPAIRS</h3>
+                <p>
+                    Identifying electrical faults and providing
+                    straightforward repair solutions.
+                </p>
+                <div class="service-card-bottom">
+                    <span>REPAIRS & MAINTENANCE</span>
+                    <span aria-hidden="true">↗</span>
+                </div>
+            </article>
+
+            <article class="service-card service-card-featured">
+                <div class="service-card-top">
+                    <span class="service-number">06 /</span>
+                    <span class="service-icon" aria-hidden="true">↗</span>
+                </div>
+                <h3>HAVE A PROJECT<br>IN MIND?</h3>
+                <p>
+                    Planning an electrical project?
+                    Tell us what you need and let's get started.
+                </p>
+                <div class="service-card-bottom">
+                    <span>REQUEST A QUOTE</span>
+                    <span aria-hidden="true">↗</span>
+                </div>
+                <a href="#contact" class="service-card-link"
+                   aria-label="Request a quote"></a>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+
+    <div class="container about-layout">
+
+        <div class="about-visual">
+            <div class="experience-outline" aria-hidden="true">35</div>
+
+            <div class="experience-number">
+                <span class="experience-small">BUILT ON</span>
+                <strong>35<span>+</span></strong>
+                <span class="experience-caption">
+                    YEARS OF EXPERIENCE
+                </span>
+            </div>
+
+            <div class="experience-detail">
+                <span class="detail-dot"></span>
+                EXPERIENCE THAT POWERS CONFIDENCE
+            </div>
+        </div>
+
+        <div class="about-copy">
+
+            <span class="about-eyebrow">
+                <span class="about-eyebrow-line"></span>
+                THE CHARGED DIFFERENCE
+            </span>
+
+            <h2>
+                FAMILY OWNED.<br>
+                <span>BUILT ON EXPERIENCE.</span>
+            </h2>
+
+            <p class="about-lead">
+                Good electrical work is about more than getting
+                the lights back on. It's about doing the job
+                properly, communicating clearly and delivering
+                solutions that last.
+            </p>
+
+            <p>
+                Charged Electrical is imagined as a family-owned
+                electrical business with 35 years of experience,
+                helping homeowners and businesses from the
+                Gold Coast through to Byron Bay.
+            </p>
+
+            <div class="about-highlights">
+                <div class="about-highlight">
+                    <span class="highlight-symbol">01</span>
+                    <span>FAMILY-OWNED APPROACH</span>
+                </div>
+
+                <div class="about-highlight">
+                    <span class="highlight-symbol">02</span>
+                    <span>RESIDENTIAL & COMMERCIAL</span>
+                </div>
+
+                <div class="about-highlight">
+                    <span class="highlight-symbol">03</span>
+                    <span>GOLD COAST TO BYRON BAY</span>
+                </div>
+            </div>
+
+            <a href="#contact" class="about-button">
+                LET'S TALK ABOUT YOUR PROJECT
+                <span aria-hidden="true">↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="areas-section" id="areas">
+    <div class="container areas-layout">
+
+        <div class="areas-intro">
+            <span class="section-label">
+                <span class="label-line"></span>
+                WHERE WE WORK
+            </span>
+
+            <h2>
+                LOCAL POWER.<br>
+                <span>COASTAL REACH.</span>
+            </h2>
+
+            <p>
+                From the Gold Coast to Byron Bay, Charged Electrical
+                is imagined to provide practical electrical services
+                for homes and businesses across the coastal region.
+            </p>
+
+            <div class="areas-region">
+                <span class="region-dot"></span>
+                SOUTH EAST QUEENSLAND & NORTHERN NSW
+            </div>
+        </div>
+
+        <div class="route-panel">
+            <div class="route-panel-heading">
+                <span>SERVICE COVERAGE</span>
+                <span>QLD / NSW</span>
+            </div>
+
+            <div class="coastal-route">
+                <div class="route-line" aria-hidden="true">
+                    <span class="route-pulse"></span>
+                </div>
+
+                <div class="route-stop">
+                    <span class="route-marker"></span>
+                    <div>
+                        <small>01 / NORTHERN SERVICE AREA</small>
+                        <h3>GOLD COAST</h3>
+                    </div>
+                    <span class="route-state">QLD</span>
+                </div>
+
+                <div class="route-stop">
+                    <span class="route-marker"></span>
+                    <div>
+                        <small>02 / BORDER REGION</small>
+                        <h3>TWEED HEADS</h3>
+                    </div>
+                    <span class="route-state">NSW</span>
+                </div>
+
+                <div class="route-stop">
+                    <span class="route-marker"></span>
+                    <div>
+                        <small>03 / SOUTHERN SERVICE AREA</small>
+                        <h3>BYRON BAY</h3>
+                    </div>
+                    <span class="route-state">NSW</span>
+                </div>
+            </div>
+
+            <div class="route-panel-footer">
+                <span class="route-footer-icon">ϟ</span>
+                <span>POWERING THE COAST</span>
+                <span>GOLD COAST → BYRON BAY</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+    <div class="container contact-layout">
+
+        <div class="contact-intro">
+            <span class="contact-eyebrow">
+                <span class="contact-status-dot"></span>
+                LET'S GET CONNECTED
+            </span>
+
+            <h2>
+                GOT A PROJECT?<br>
+                <span>LET'S POWER IT.</span>
+            </h2>
+
+            <p>
+                From a small electrical upgrade to a bigger project,
+                start with a conversation. Tell us what you're
+                planning and what you need.
+            </p>
+
+            <div class="contact-details">
+                <div class="contact-detail">
+                    <span>01 / SERVICE REGION</span>
+                    <strong>GOLD COAST TO BYRON BAY</strong>
+                </div>
+
+                <div class="contact-detail">
+                    <span>02 / BUSINESS TYPE</span>
+                    <strong>FAMILY-OWNED ELECTRICAL</strong>
+                </div>
+            </div>
+
+            <div class="contact-decor" aria-hidden="true">ϟ</div>
+        </div>
+
+        <div class="contact-form-panel">
+            <div class="form-panel-header">
+                <div>
+                    <span>PROJECT ENQUIRY</span>
+                    <h3>REQUEST A QUOTE</h3>
+                </div>
+                <span class="form-panel-number">01 / 01</span>
+            </div>
+
+            <p class="form-demo-notice">
+                DEMONSTRATION FORM ONLY — NO INFORMATION IS SENT OR STORED.
+            </p>
+
+            <form id="demo-contact-form">
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="contact-name">YOUR NAME</label>
+                        <input type="text" id="contact-name"
+                               placeholder="Full name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="contact-email">EMAIL ADDRESS</label>
+                        <input type="email" id="contact-email"
+                               placeholder="you@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-service">SERVICE REQUIRED</label>
+                    <select id="contact-service" required>
+                        <option value="" disabled selected>
+                            Select a service
+                        </option>
+                        <option>Residential Electrical</option>
+                        <option>Commercial Electrical</option>
+                        <option>Lighting Solutions</option>
+                        <option>Switchboards & Upgrades</option>
+                        <option>Fault Finding & Repairs</option>
+                        <option>Other Electrical Project</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-message">TELL US ABOUT YOUR PROJECT</label>
+                    <textarea id="contact-message" rows="5"
+                              placeholder="What do you need help with?"
+                              required></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit">
+                    PREVIEW ENQUIRY
+                    <span aria-hidden="true">↗</span>
+                </button>
+
+                <p class="form-feedback" id="form-feedback"
+                   role="status" aria-live="polite"></p>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+    </main>
+
+    
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">
+                    <span class="footer-logo-icon">ϟ</span>
+                    <span class="footer-logo-text">
+                        <strong>CHARGED</strong>
+                        <small>ELECTRICAL</small>
+                    </span>
+                </a>
+
+                <p>
+                    Powering what matters. Family-owned electrical
+                    services from the Gold Coast to Byron Bay.
+                </p>
+
+                <span class="footer-tagline">
+                    BUILT TO KEEP YOU CONNECTED
+                </span>
+            </div>
+
+            <div class="footer-links">
+                <h3>EXPLORE</h3>
+                <a href="#home">Home</a>
+                <a href="#services">Our Services</a>
+                <a href="#about">About Us</a>
+                <a href="#areas">Service Areas</a>
+                <a href="#contact">Request a Quote</a>
+            </div>
+
+            <div class="footer-location">
+                <h3>WHERE WE WORK</h3>
+                <span>Gold Coast, QLD</span>
+                <span>Tweed Heads, NSW</span>
+                <span>Byron Bay, NSW</span>
+
+                <a href="#contact" class="footer-cta">
+                    START A PROJECT
+                    <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-demo-notice">
+            <span>DEMONSTRATION WEBSITE</span>
+            <p>
+                Charged Electrical is a fictional business.
+                All business details, service claims and experience
+                figures are illustrative. This website does not
+                represent a real electrical contractor.
+            </p>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 CHARGED ELECTRICAL — FICTIONAL CONCEPT</span>
+
+            <span>
+                WEBSITE DESIGN BY
+                <a href="https://gjpdigital.com.au/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GJP DIGITAL ↗
+                </a>
+            </span>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+    const demoForm = document.getElementById('demo-contact-form');
+    const formFeedback = document.getElementById('form-feedback');
+
+    demoForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        formFeedback.textContent =
+            'Demo preview complete. This is a fictional website. ' +
+            'No enquiry has been sent or stored.';
+
+        demoForm.reset();
+    });
+</script>
+
+</body>
+</html>
